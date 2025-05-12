@@ -6,26 +6,22 @@
 }
 
 :root{
-    --pri-color: #05132e;
-    --acc-color-dark: #6f98f5;
-    --acc-color-lite: rgb(166, 199, 253);
-    --sec-color: #e27e05;
-    --sec-color-lite: #ff8c00;
+    --pri-color: #bff2e1;
+    --pri-dark: #20c997;
     --white: #f6f6f6;
-    --text-color: #94a3b8;
-    /* Roboto Font */
-    --roboto-font: "Roboto", serif;
+    --black: #1a1a1a;
+    --open-sans-font: "Open Sans", sans-serif;
+    --poppins: "Poppins", sans-serif;
 }
 
 html{
     scroll-behavior: smooth;
-    scroll-padding-top: 4.5rem; /*Scroll Offset Caused by Fixed Headers*/
+    /* scroll-padding-top: 4.5rem;  */
 }
 
 body{
     font-family: "Poppins", serif;
-    background-color: var(--pri-color);
-    color: var(--white);
+    background-color: var(--white);
 }
 
 /* Container width class */
@@ -42,7 +38,6 @@ body{
 /* Global Headings Style */
 h1, h2, h3, h4, h5, h6 {
     font-weight: 600; 
-    color: var(--white);
     margin: 0 0 10px; /* Add spacing below for separation */
     line-height: 1.3; 
 }
@@ -69,17 +64,15 @@ h4 {
 
 /* Paragraph Style */
 p {
-    /* font-family: var(--roboto-font); */
     font-size: 1rem;
     line-height: 1.6; 
-    /* color: var(--text-color); */
     margin: 0 0 15px; /* Add space below each paragraph */
 }
 
 /* Links Style */
 a {
     font-size: 1rem;
-    text-decoration: none; /* Remove underline */
+    text-decoration: none; 
     font-weight: 500;
 }
 
