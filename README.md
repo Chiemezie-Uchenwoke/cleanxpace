@@ -32,7 +32,7 @@ CleanXpace Solutions offers high-quality, eco-friendly cleaning services designe
 - **Meta Tags & SEO Optimized**
 - **Deployment:** Vercel or Netlify (for development and demo)
 
-## Author
+## Authors
 
 **Chiemezie Uchenwoke**  
 Software Developer & JavaScript Mentor   
