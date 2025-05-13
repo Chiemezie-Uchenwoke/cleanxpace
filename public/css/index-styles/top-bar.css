@@ -1,0 +1,77 @@
+:root{
+    --pri-color: #bff2e1;
+    --pri-dark: #20c997;
+    --white: #f6f6f6;
+    --black: #1a1a1a;
+    --open-sans-font: "Open Sans", sans-serif;
+    --poppins: "Poppins", sans-serif;
+}
+
+.top-bar{
+    background-color: var(--pri-color);
+    height: 3.7rem;
+    border-bottom: 1px solid rgb(176, 176, 176);
+    display: flex;
+    align-items: center;
+}
+
+.top-bar-inner{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.3rem 0;
+}
+
+.top-bar-contact{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.top-bar-contact p{
+    font-size: 0.7rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.icons button{
+    background-color: var(--white);
+    border: none;
+    width: 1.6rem;
+    height: 1.6rem;
+    border-radius: 50%;
+    font-size: 0.8rem;
+    border: 1px solid rgb(176, 176, 176);
+    transition: filter 0.3s ease-in-out;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.top-bar button:hover{
+    filter: brightness(0.9);
+}
+
+@media (min-width: 768px){
+    .top-bar{
+        height: 2.3rem;
+    }
+
+    .top-bar-inner {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .icons{
+        gap: 1rem;
+    }
+}

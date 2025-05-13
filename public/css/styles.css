@@ -82,6 +82,10 @@ li {
     line-height: 1.6;
 }
 
+button{
+    cursor: pointer;
+}
+
 .scroll__top{
     all: unset;
     cursor: pointer;
