@@ -15,6 +15,9 @@ header.desktop{
     border-bottom: 1px solid var(--border-color);
     display: none;
     align-items: center;
+    position: sticky;
+    top: 0;
+    left: 0;
 }
 
 header.desktop > div{
@@ -60,6 +63,9 @@ header.mobile{
     border-bottom: 1px solid var(--border-color);
     display: flex;
     align-items: center;
+    position: sticky;
+    top: 0;
+    left: 0;
 }
 
 header.mobile > div{
@@ -88,6 +94,7 @@ header.mobile nav{
     align-items: center;
     gap: 1rem;
     border-right: 1px solid var(--border-color);
+    overflow-y: auto;
 }
 
 header.mobile nav a{
