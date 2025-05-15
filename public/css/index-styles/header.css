@@ -1,0 +1,59 @@
+:root{
+    --pri-color: #bff2e1;
+    --pri-dark: #20c997;
+    --white: #f6f6f6;
+    --black: #1a1a1a;
+    --open-sans-font: "Open Sans", sans-serif;
+    --poppins: "Poppins", sans-serif;
+    --border-color: rgb(211, 211, 211);
+}
+
+header.desktop{
+    height: 4.5rem;
+    background-color: var(--white);
+    border-bottom: 1px solid var(--border-color);
+    display: none;
+    align-items: center;
+}
+
+header.desktop > div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.desktop_inner > div{
+    font-weight: 600;
+    text-transform: capitalize;
+    font-size: 1.25rem;
+    width: 30%;
+}
+
+header.desktop nav{
+    display: flex;
+    gap: 2rem;
+    width: 40%;
+}
+
+header.desktop a{
+    color: var(--black);
+    text-transform: capitalize;
+    font-size: 0.95rem;
+}
+
+header.desktop button{
+    border: 1px solid var(--border-color);
+    background-color: var(--pri-color);
+    text-transform: capitalize;
+    font-weight: 600;
+    padding: 0.7rem 3rem;
+    border-radius: 10px;
+    font-size: 0.95rem;
+}
+
+
+@media (min-width: 1000px){
+    header.desktop{
+        display: flex;
+    }
+}

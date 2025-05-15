@@ -26,6 +26,7 @@
 
     <!-- css styles -->
      <link rel="stylesheet" href="./css/index-styles/top-bar.css">
+     <link rel="stylesheet" href="./css/index-styles/header.css">
 
     <!-- Open sans font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -59,9 +60,26 @@
         </div>
     </div>
 
-    <header>
-        <div class="container">
+    <!-- desktop >= 1000px -->
+    <header class="desktop">
+        <div class="container desktop_inner">
+            <div>CleanXpace Solutions</div>
+            <nav>
+                <a href="#" class="active">home</a>
+                <a href="#">about</a>
+                <a href="#">services</a>
+                <a href="#">contact</a>
+            </nav>
+            <button>book now</button>
+        </div>
+    </header>
+
+    <!-- mobile <= 1000px -->
+     <header class="mobile">
+        <div class="container mobile_inner">
+            <div>CleanXpace Solutions</div>
             
+            <button><i class="fa-solid fa-bars"></i></button>
         </div>
     </header>
     

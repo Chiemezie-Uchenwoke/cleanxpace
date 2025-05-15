@@ -12,6 +12,7 @@
     --black: #1a1a1a;
     --open-sans-font: "Open Sans", sans-serif;
     --poppins: "Poppins", sans-serif;
+    --border-color: rgb(211, 211, 211);
 }
 
 html{
@@ -33,6 +34,11 @@ body{
 /* Margin-top */
 .top-margin{
     margin-top: 5rem;
+}
+
+/* active class */
+header.desktop a.active{
+    color: var(--pri-dark);
 }
 
 /* Global Headings Style */
