@@ -43,6 +43,11 @@ header.desktop a{
     color: var(--black);
     text-transform: capitalize;
     font-size: 0.95rem;
+    transition: color 0.3s ease-in-out;
+}
+
+header.desktop a:hover{
+    color: var(--pri-dark);
 }
 
 header.desktop button{
@@ -53,6 +58,11 @@ header.desktop button{
     padding: 0.7rem 3rem;
     border-radius: 10px;
     font-size: 0.95rem;
+    transition: filter 0.3s ease-in-out;
+}
+
+header.desktop button:hover{
+    filter: brightness(0.98);
 }
 
 
