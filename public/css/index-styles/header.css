@@ -92,7 +92,7 @@ header.mobile > div{
 
 header.mobile nav{
     position: absolute;
-    top: 0;
+    top: -4rem;
     left: 0;
     height: 100vh;
     width: 70%;
@@ -105,6 +105,7 @@ header.mobile nav{
     gap: 1rem;
     border-right: 1px solid var(--border-color);
     overflow-y: auto;
+    box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.05);
 }
 
 header.mobile nav a{
@@ -176,6 +177,12 @@ button.book-now{
     }
 }
 
+
+@media (min-width: 768px){
+    header.mobile nav{
+        top: -2.3rem;
+    }
+}
 
 
 @media (min-width: 1000px){
