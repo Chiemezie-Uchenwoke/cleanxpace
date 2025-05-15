@@ -8,6 +8,7 @@
     --border-color: rgb(211, 211, 211);
 }
 
+/* desktop header */
 header.desktop{
     height: 4.5rem;
     background-color: var(--white);
@@ -52,8 +53,120 @@ header.desktop button{
 }
 
 
+/* mobile header */
+header.mobile{
+    height: 3.5rem;
+    background-color: var(--white);
+    border-bottom: 1px solid var(--border-color);
+    display: flex;
+    align-items: center;
+}
+
+header.mobile > div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mobile_inner > div:nth-child(1){
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+header.mobile nav{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 70%;
+    max-width: 18rem;
+    background-color: var(--white);
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    border-right: 1px solid var(--border-color);
+}
+
+header.mobile nav a{
+    text-transform: capitalize;
+    color: var(--black);
+    font-size: 0.9rem;
+}
+
+button.open-mobile{
+    border: 1px solid var(--border-color);
+    background-color: var(--white);
+    text-transform: capitalize;
+    font-weight: 500;
+    padding: 0.3rem 0.5rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-family: var(--poppins);
+}
+
+.close-mobile{
+    position: absolute;
+    top: 3rem;
+    right: 2rem;
+    border: 1px solid var(--border-color);
+    padding: 0.3rem 0.5rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    background-color: var(--white);
+}
+
+button.book-now{
+    border: 1px solid var(--border-color);
+    background-color: var(--pri-color);
+    text-transform: capitalize;
+    font-weight: 500;
+    padding: 0.4rem 1.5rem;
+    border-radius: 10px;
+    font-size: 0.9rem;
+    font-family: var(--poppins);
+    margin: 0.4rem 0;
+}
+
+
+.animate-mobile{
+    animation: animatemobilemenu 1s forwards;
+}
+
+.remove-animation{
+    animation: remove-animate 1s forwards;
+}
+
+@keyframes animatemobilemenu {
+    0%{
+        transform: translateX(21rem);
+    }
+
+    100%{
+        transform: translateX(0);
+    }
+}
+
+@keyframes remove-animate {
+    0%{
+        transform: translateX(0);
+    }
+
+    100%{
+        transform: translateX(21rem);
+    }
+}
+
+
+
 @media (min-width: 1000px){
     header.desktop{
         display: flex;
+    }
+
+    header.mobile{
+        display: none;
     }
 }
