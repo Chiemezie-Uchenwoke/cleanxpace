@@ -11,11 +11,13 @@
 }
 
 .hero{
-    height: calc(100vh - 7.5rem);
+    min-height: calc(100vh - 7.5rem);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+    display: flex;
+    align-items: center;
 }
 
 .hero::before{
@@ -24,7 +26,7 @@
     width: 100%;
     height: 100%;
     background-color: var(--pri-color);
-    opacity: 0.85;
+    opacity: 0.8;
 }
 
 .hero-inner{
@@ -34,7 +36,9 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    /* align-items: flex-start; */
     gap: 0.7rem;
+    padding: 1rem 0;
 }
 
 .hero h1{
@@ -47,7 +51,7 @@
 .hero p{
     font-family: var(--open-sans-font);
     font-size: 0.9rem;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .hero button{
@@ -61,6 +65,7 @@
     text-transform: capitalize;
     font-weight: 600;
     letter-spacing: 0.3px;
+    margin: 0.7rem 0;
 }
 
 @media (min-width: 360px){
@@ -114,7 +119,7 @@
     }
 
     .hero p{
-        font-size: 1rem;
+        font-size: 1.2rem;
         width: 70%;
     }
 
