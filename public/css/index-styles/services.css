@@ -29,6 +29,7 @@
 .services-intro p{
     font-family: var(--open-sans-font);
     text-align: center;
+    font-size: 0.9rem;
 }
 
 .services img {
@@ -90,6 +91,10 @@
 @media (min-width: 600px) {
     .services-content{
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .services-intro p{
+        font-size: 0.95rem;
     }
 }
 
