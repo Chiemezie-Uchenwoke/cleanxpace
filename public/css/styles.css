@@ -8,11 +8,13 @@
 :root{
     --pri-color: #bff2e1;
     --pri-dark: #20c997;
+    --sec-color: rgb(255, 0, 85);
     --white: #f6f6f6;
     --black: #1a1a1a;
     --open-sans-font: "Open Sans", sans-serif;
     --poppins: "Poppins", sans-serif;
     --border-color: rgb(211, 211, 211);
+    --border-color2: rgb(138, 138, 138);
 }
 
 html{

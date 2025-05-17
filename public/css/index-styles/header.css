@@ -6,6 +6,7 @@
     --open-sans-font: "Open Sans", sans-serif;
     --poppins: "Poppins", sans-serif;
     --border-color: rgb(211, 211, 211);
+    --border-color2: rgb(138, 138, 138);
 }
 
 /* desktop header */
@@ -18,6 +19,7 @@ header.desktop{
     position: sticky;
     top: 0;
     left: 0;
+    z-index: 1000;
 }
 
 header.desktop > div{
@@ -76,6 +78,7 @@ header.mobile{
     position: sticky;
     top: 0;
     left: 0;
+    z-index: 1000;
 }
 
 header.mobile > div{
