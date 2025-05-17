@@ -5,12 +5,12 @@ let index = 0;
 document.addEventListener("DOMContentLoaded", () => {
     let imageUrl = images[index];
     heroContainer.style.backgroundImage = `url(${imageUrl})`;
+    heroContainer.style.transition = `background-image 0.3s ease-in-out`;
 
     const handleImage = () => {
         index = (index + 1) % images.length;
         imageUrl = images[index];
         heroContainer.style.backgroundImage = `url(${imageUrl})`;
-        heroContainer.style.transition = `background-image 0.3s ease-in-out`;
     }
 
     setInterval(handleImage, 5000);
