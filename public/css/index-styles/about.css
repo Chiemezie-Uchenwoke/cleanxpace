@@ -1,0 +1,124 @@
+:root{
+    --pri-color: #bff2e1;
+    --pri-dark: #20c997;
+    --white: #f6f6f6;
+    --black: #1a1a1a;
+    --open-sans-font: "Open Sans", sans-serif;
+    --poppins: "Poppins", sans-serif;
+    --border-color: rgb(211, 211, 211);
+    --border-color2: rgb(138, 138, 138);
+    --text-color: #6c6c6c;
+}
+
+.about{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.about h2{
+    text-transform: capitalize;
+}
+
+.about-intro{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-intro h2,p{
+    margin: 0;
+}
+
+.about-intro p{
+    text-align: center;
+    width: 85%;
+    font-size: 0.9rem;
+    font-family: var(--open-sans-font);
+}
+
+.about > div:nth-child(2) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.about img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: scale 0.3s ease-in-out;
+    position: relative;
+    z-index: 0;
+}
+
+.about figure{
+    overflow: hidden;
+    border-radius: 10px;
+    position: relative;
+}
+
+.about figure::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--pri-color);
+    opacity: 0;
+    pointer-events: none;
+    z-index: 2;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.about figure:hover img{
+    scale: 1.03;
+}
+
+.about figure:hover::before {
+    opacity: 0.1;
+}
+
+.about a {
+    align-self: center;
+    background-color: var(--pri-color);
+    border: 1px solid var(--border-color);
+    padding: 0.7rem 2.5rem;
+    margin-top: 1rem;
+    font-size: 1rem;
+    border-radius: 10px;
+    text-transform: capitalize;
+    font-weight: 600;
+    color: var(--black);
+    transition: filter 0.3s ease-in-out;
+}
+
+.about a:hover{
+    filter: brightness(0.97);
+}
+
+@media (min-width: 768px){
+    .about > div:nth-child(2) {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .about-intro p{
+        font-size: 0.95rem;
+        max-width: 40rem;
+    }
+}
+
+@media (min-width: 900px){
+    .about-intro p{
+        max-width: 45rem;
+    }
+}
+
+@media (min-width: 1000px){
+    .about-intro p{
+        max-width: 50rem;
+    }
+}

@@ -76,6 +76,7 @@
     gap: 1rem;
     font-weight: 500;
     font-family: var(--open-sans-font);
+    font-size: 0.95rem;
 }
 
 .choose-us ul{
@@ -92,6 +93,7 @@
 
 .choose-us > div:last-child p{
     font-family: var(--open-sans-font);
+    font-size: 0.95rem;
 }
 
 .choose-us a{
@@ -134,4 +136,8 @@
     .choose-us > div:first-child{
         padding-inline: 2rem;
     }
+
+    .choose-us > div:last-child p{
+    font-size: 1rem;
+}
 }
