@@ -85,6 +85,11 @@
     text-transform: capitalize;
     font-weight: 600;
     color: var(--black);
+    transition: filter 0.3s ease-in-out;
+}
+
+.services a:hover{
+    filter: brightness(0.97);
 }
 
 

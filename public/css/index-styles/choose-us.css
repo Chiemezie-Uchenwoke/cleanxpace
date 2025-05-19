@@ -105,6 +105,11 @@
     text-transform: capitalize;
     font-weight: 600;
     color: var(--black);
+    transition: filter 0.3s ease-in-out;
+}
+
+.choose-us a:hover{
+    filter: brightness(0.97);
 }
 
 @media (min-width: 768px){
@@ -124,5 +129,9 @@
 @media (min-width: 900px){
     .choose-us > div{
         padding: 4rem 2rem;
+    }
+
+    .choose-us > div:first-child{
+        padding-inline: 2rem;
     }
 }
