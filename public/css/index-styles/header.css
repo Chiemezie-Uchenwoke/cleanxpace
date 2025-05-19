@@ -95,8 +95,8 @@ header.mobile > div{
 }
 
 header.mobile nav{
-    position: absolute;
-    top: -4rem;
+    position: fixed;
+    top: 0;
     left: 0;
     height: 100vh;
     width: 70%;
@@ -163,7 +163,7 @@ button.book-now{
 
 @keyframes animatemobilemenu {
     0%{
-        transform: translateX(21rem);
+        transform: translateX(-21rem);
     }
 
     100%{
@@ -177,16 +177,16 @@ button.book-now{
     }
 
     100%{
-        transform: translateX(21rem);
+        transform: translateX(-21rem);
     }
 }
 
 
-@media (min-width: 768px){
+/* @media (min-width: 768px){
     header.mobile nav{
         top: -2.3rem;
     }
-}
+} */
 
 
 @media (min-width: 1000px){
