@@ -42,7 +42,7 @@
 .about > div:nth-child(2) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
+    gap: 1rem;
 }
 
 .about img{
@@ -103,6 +103,7 @@
 @media (min-width: 768px){
     .about > div:nth-child(2) {
         grid-template-columns: repeat(4, 1fr);
+        gap: 2rem;
     }
 
     .about-intro p{
