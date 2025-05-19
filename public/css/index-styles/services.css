@@ -66,7 +66,7 @@
     color: var(--text-color);
 }
 
-.services-desc h2{
+.services-desc h3{
     text-transform: capitalize;
     font-size: 1.3rem;
 }
