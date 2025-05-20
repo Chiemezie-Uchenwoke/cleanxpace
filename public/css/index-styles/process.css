@@ -1,0 +1,95 @@
+:root{
+    --pri-color: #bff2e1;
+    --pri-dark: #20c997;
+    --white: #f6f6f6;
+    --black: #1a1a1a;
+    --open-sans-font: "Open Sans", sans-serif;
+    --poppins: "Poppins", sans-serif;
+    --border-color: rgb(211, 211, 211);
+    --border-color2: rgb(138, 138, 138);
+    --text-color: #6c6c6c;
+}
+
+.process{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.process-desc {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    background-color: #6c6c6c;
+}
+
+.process-desc h3{
+    font-size: 0.85rem;
+    text-transform: capitalize;
+    color: var(--text-color);
+    font-weight: 500;
+}
+
+.process-circle{
+    display: inline-block;
+    width: 5rem;
+    height: 5rem;
+    background-color: var(--pri-dark);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.process-desc i{
+    font-size: 2rem;
+    color: var(--white);
+}
+
+.process-desc > span{
+    display: inline-block;
+    width: 3rem;
+    height: 0.2rem;
+    background-color: var(--black);
+    flex-shrink: 0;
+}
+
+.process-desc > span:nth-child(4){
+    display: none;
+}
+
+.process-desc > div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.badge{
+    position: absolute;
+    right: -0.5rem;
+    top: -0.5rem;
+    background-color: gold;
+    width: 2.3rem;
+    height: 2.3rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--white);
+    font-weight: 600;
+}
+
+@media (min-width: 768px){
+    .process-desc {
+        grid-template-columns: repeat(7, 1fr);
+    }
+}
