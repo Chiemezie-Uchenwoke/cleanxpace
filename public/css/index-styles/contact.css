@@ -30,6 +30,51 @@
 .contact figure{
     overflow: hidden;
     border-radius: 10px;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    max-height: 20rem;
+}
+
+.contact figure::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--black);
+    z-index: 3;
+    opacity: 0.1;
+}
+
+.contact .ads{
+    position: absolute;
+    bottom: 2rem;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    align-items: center;
+    justify-content: center;
+    padding: 0 5rem;
+    z-index: 4;
+    display: none;
+}
+
+.contact .ads p{
+    border: 1.5px solid var(--white);
+    border-radius: 25px;
+    padding: 0.5rem 0.7rem;
+    text-transform: capitalize;
+    font-size: 0.8rem;
+    /* background-color: rgba(234, 234, 234, 0.164); */
+    color: var(--white);
+    font-weight: 700;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 25px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1.5px solid var(--white);
 }
 
 .contact img{
@@ -69,9 +114,25 @@
 }
 
 
+@media (min-width: 600px){
+    .contact .ads{
+        display: flex;
+    }
+}
+
+@media (min-width: 730px){
+    .contact .ads{
+        padding: 0 8rem;
+    }
+}
+
 @media (min-width: 768px){
     .contact{
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .contact .ads{
+        padding: 0 2rem;
     }
 
     .contact > div{
@@ -90,5 +151,11 @@
 
     .contact p{
         font-size: 1rem;
+    }
+}
+
+@media (min-width: 1500px){
+    .contact .ads{
+        padding: 0 5rem;
     }
 }
