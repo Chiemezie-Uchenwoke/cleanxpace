@@ -45,6 +45,7 @@
     text-transform: capitalize;
     white-space: nowrap;
     font-weight: 500;
+    font-family: var(--open-sans-font);
 }
 
 @keyframes scroll{
