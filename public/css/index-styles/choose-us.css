@@ -57,6 +57,7 @@
 .choose-us > div:first-child p{
     font-weight: 600;
     font-family: var(--open-sans-font);
+    font-size: 0.95rem;
 }
 
 .choose-us-intro {
@@ -66,7 +67,7 @@
 
 .choose-us h2{
     text-transform: capitalize;
-    font-size: 1.7rem;
+    font-size: 1.5rem;
 }
 
 .choose-us > div:first-child li{
@@ -122,6 +123,10 @@
         grid-template-columns: 1fr 1fr;
     }
 
+    .choose-us h2{
+        font-size: 1.5rem;
+    }
+
     .choose-us > div:first-child{
         padding-inline: none;
     }
@@ -138,6 +143,14 @@
 
     .choose-us > div:first-child{
         padding-inline: 2rem;
+    }
+
+     .choose-us h2{
+        font-size: 1.7rem;
+    }
+
+    .choose-us > div:first-child p{
+        font-size: 1rem;
     }
 
     .choose-us > div:last-child p{
