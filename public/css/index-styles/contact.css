@@ -1,0 +1,94 @@
+:root{
+    --pri-color: #bff2e1;
+    --pri-dark: #20c997;
+    --white: #f6f6f6;
+    --black: #1a1a1a;
+    --open-sans-font: "Open Sans", sans-serif;
+    --poppins: "Poppins", sans-serif;
+    --border-color: rgb(211, 211, 211);
+    --border-color2: rgb(138, 138, 138);
+    --text-color: #6c6c6c;
+    --marquee: rgb(242, 242, 242);
+}
+
+.contact {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+.contact h2{
+    text-transform: capitalize;
+    font-size: 1.5rem;
+}
+
+.contact p{
+    font-family: var(--open-sans-font);
+    font-size: 0.95rem;
+}
+
+.contact figure{
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.contact img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    max-width: 100%;
+    transition: scale 0.5s ease-in-out;
+}
+
+.contact img:hover{
+    scale: 1.03;
+}
+
+.contact > div{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.contact a{
+    align-self: flex-start;
+    background-color: var(--pri-color);
+    border: 1px solid var(--border-color);
+    padding: 0.7rem 2.5rem;
+    margin-top: 0.7rem;
+    font-size: 1rem;
+    border-radius: 10px;
+    text-transform: capitalize;
+    font-weight: 600;
+    color: var(--black);
+    transition: filter 0.3s ease-in-out;
+}
+
+.contact a:hover{
+    filter: brightness(0.97);
+}
+
+
+@media (min-width: 768px){
+    .contact{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .contact > div{
+        justify-content: center;
+    }
+}
+
+@media (min-width: 1000px){
+    .contact{
+        gap: 3rem;
+    }
+
+    .contact h2{
+        font-size: 1.7rem;
+    }
+
+    .contact p{
+        font-size: 1rem;
+    }
+}
