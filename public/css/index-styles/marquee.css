@@ -23,7 +23,6 @@
 }
 
 .marquee > div {
-    /* overflow: hidden; */
     width: fit-content;
     display: flex;
     align-items: center;
