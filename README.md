@@ -21,7 +21,7 @@ CleanXpace Solutions offers high-quality, eco-friendly cleaning services designe
 - **About** – Background and service philosophy  
 - **Services** – Detailed breakdown of cleaning packages  
 - **Book Now** – A booking form for requesting services  
-- **Contact** – (Optional) Additional ways to reach the team  
+- **Contact** – Additional ways to reach the team  
 
 ## Tech Stack
 
