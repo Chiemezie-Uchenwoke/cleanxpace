@@ -47,6 +47,12 @@
     z-index: 3;
     opacity: 0.05;
     pointer-events: none;
+    transition: background-color 0.3s ease-in-out, opacity 0.3s;
+}
+
+.contact figure:hover::before{
+    background-color: var(--pri-color);
+    opacity: 0;
 }
 
 .contact .ads{
