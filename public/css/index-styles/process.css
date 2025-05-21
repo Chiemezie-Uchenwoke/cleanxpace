@@ -134,6 +134,10 @@
         width: 2.5rem;
         height: 2.5rem;
     }
+
+    .process-intro p{
+        font-size: 0.95rem;
+    }
 }
 
 
@@ -154,6 +158,20 @@
 
     .process-desc > span{
         display: inline-block;
+    }
+
+    .process-circle {
+        width: 6.5rem;
+        height: 6.5rem;
+    }
+
+    .badge{
+        width: 2.7rem;
+        height: 2.7rem;
+    }
+
+    .process-desc i{
+        font-size: 2.25rem;
     }
 }
 
