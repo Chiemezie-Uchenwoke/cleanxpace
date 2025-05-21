@@ -83,6 +83,11 @@ footer .footer-icons button:hover{
 footer a{
     color: var(--black);
     text-transform: capitalize;
+    transition: color 0.3s ease-in-out;
+}
+
+footer a:hover{
+    color: var(--pri-dark);
 }
 
 footer .copy-text{
