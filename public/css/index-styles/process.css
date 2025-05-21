@@ -18,20 +18,35 @@
     align-items: center;
 }
 
+.process-intro h2, p{
+    margin: 0;
+}
+
+.process h2{
+    text-transform: capitalize;
+}
+
+.process-intro p{
+    font-family: var(--open-sans-font);
+    text-align: center;
+    font-size: 0.9rem;
+    text-transform: capitalize  ;
+}
+
 .process-desc {
+    height: 10rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     gap: 1.5rem;
-    background-color: #6c6c6c;
 }
 
 .process-desc h3{
     font-size: 0.85rem;
     text-transform: capitalize;
-    color: var(--text-color);
-    font-weight: 500;
+    color: var(--black);
+    font-weight: 600;
 }
 
 .process-circle{
@@ -44,6 +59,7 @@
     justify-content: center;
     align-items: center;
     padding: 1rem;
+    /* margin: 1rem; */
     flex-shrink: 0;
     position: relative;
 }
@@ -59,6 +75,8 @@
     height: 0.2rem;
     background-color: var(--black);
     flex-shrink: 0;
+    position: relative;
+    bottom: 1rem;
 }
 
 .process-desc > span:nth-child(4){
@@ -88,8 +106,55 @@
     font-weight: 600;
 }
 
+@media (min-width: 350px){
+    .process-circle {
+        width: 6rem;
+        height: 6rem;
+    }
+
+    .badge{
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+}
+
+@media (min-width: 458px){
+    .process-desc > span:nth-child(4){
+        /* display: inline-block; */
+    }
+}
+
+@media (min-width: 500px){
+    .process-circle {
+        width: 6rem;
+        height: 6rem;
+    }
+
+    .badge{
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+
+    .process-desc > span:nth-child(4){
+        display: inline-block;
+    }
+}
+
+
 @media (min-width: 768px){
     .process-desc {
         grid-template-columns: repeat(7, 1fr);
     }
 }
+
+@media (min-width: 1000px){
+    .process-desc{
+        gap: 2rem;
+    }
+
+    .process-desc > span{
+        width: 5rem;
+    }
+}
+
+
