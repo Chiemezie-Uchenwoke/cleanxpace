@@ -15,3 +15,8 @@ toggleCloseBtn.addEventListener("click", () => {
         mobileDropDown.style.display = "none";
     }, 1000);
 });
+
+// footer
+const yearNode = document.getElementById("year");
+const year = new Date().getFullYear();
+yearNode.textContent = year;
