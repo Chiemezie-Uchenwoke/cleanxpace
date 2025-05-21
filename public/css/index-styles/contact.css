@@ -36,7 +36,7 @@
     max-height: 20rem;
 }
 
-.contact figure::before{
+/* .contact figure::before{
     content: "";
     position: absolute;
     left: 0;
@@ -46,7 +46,7 @@
     background-color: var(--black);
     z-index: 3;
     opacity: 0.1;
-}
+} */
 
 .contact .ads{
     position: absolute;
@@ -72,8 +72,8 @@
     background: rgba(255, 255, 255, 0.2);
     border-radius: 25px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(6px);
-    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
     border: 1.5px solid var(--white);
 }
 
