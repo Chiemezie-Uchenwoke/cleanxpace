@@ -37,9 +37,9 @@
     height: 10rem;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    gap: 1.5rem;
+    gap: 2rem;
 }
 
 .process-desc h3{
@@ -70,17 +70,13 @@
 }
 
 .process-desc > span{
-    display: inline-block;
+    display: none;
     width: 3rem;
     height: 0.2rem;
     background-color: var(--black);
     flex-shrink: 0;
     position: relative;
     bottom: 1rem;
-}
-
-.process-desc > span:nth-child(4){
-    display: none;
 }
 
 .process-desc > div{
@@ -119,8 +115,8 @@
 }
 
 @media (min-width: 458px){
-    .process-desc > span:nth-child(4){
-        display: none;
+    .process-desc{
+        gap: 3rem;
     }
 
     .process-desc > span{
@@ -138,16 +134,12 @@
         width: 2.5rem;
         height: 2.5rem;
     }
-
-    .process-desc > span:nth-child(4){
-        display: inline-block;
-    }
 }
 
 
 @media (min-width: 768px){
-    .process-desc {
-        grid-template-columns: repeat(7, 1fr);
+    .process-desc{
+        gap: 5rem;
     }
 
     .process h3{
@@ -158,6 +150,10 @@
 @media (min-width: 1000px){
     .process-desc{
         gap: 2rem;
+    }
+
+    .process-desc > span{
+        display: inline-block;
     }
 }
 
