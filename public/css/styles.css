@@ -98,10 +98,10 @@ button{
 }
 
 .scroll__top{
-    all: unset;
+    border: 1px solid var(--border-color);
     cursor: pointer;
-    background-color: var(--sec-color-lite);
-    color: var(--pri-color);
+    background-color: var(--pri-dark);
+    color: var(--white);
     width: 2.5rem;
     height: 2.5rem;
     border-radius: 50%;
@@ -113,11 +113,11 @@ button{
     position: fixed;
     right: 3%;
     bottom: 8%;
-    animation: scroll 2s ease-in-out infinite;
+    animation: scrollTop 2s ease-in-out infinite;
 }
 
 .whatsapp{
-    all: unset;
+    border: none;
     cursor: pointer;
     background-color: var(--acc-color-lite);
     color: var(--pri-color);
@@ -137,7 +137,7 @@ button{
     animation: scroll 2s ease-in-out infinite;
 }
 
-@keyframes scroll {
+@keyframes scrollTop {
     0%{
         transform: translateY(0);
     }

@@ -20,3 +20,24 @@ toggleCloseBtn.addEventListener("click", () => {
 const yearNode = document.getElementById("year");
 const year = new Date().getFullYear();
 yearNode.textContent = year;
+
+// scroll to top
+const scrollToTopBtn = document.getElementById("scrollTop");
+scrollToTopBtn.style.display = "none";
+
+window.addEventListener("scroll", () => {
+    const scrollPosition = document.documentElement.scrollTop || document.body.scrollTop;
+
+    if (scrollPosition > window.innerHeight){
+        scrollToTopBtn.style.display = "flex";
+    } else {
+        scrollToTopBtn.style.display = "none";
+    }
+});
+
+scrollToTopBtn.addEventListener("click", () => {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+    });
+});
