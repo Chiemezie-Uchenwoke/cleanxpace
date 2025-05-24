@@ -130,7 +130,89 @@
 
 /* why choose us section */
 .why-choose{
-    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.why-choose h2{
+    text-transform: capitalize;
+}
+
+.choose-inner{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+.choose-inner figure{
+    overflow: hidden;
+    border-radius: 10px;
+    /* pointer-events: none; */
+    position: relative;
+}
+
+.choose-inner figure::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: var(--black);
+    opacity: 0.1;
+    pointer-events: none;
+    z-index: 2;
+}
+
+.why-choose img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+    position: relative;
+    z-index: 1;
+}
+
+.why-choose img:hover{
+    transform: scale(1.03);
+}
+
+.reasons{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+.reasons > div{
+    border: 1px solid var(--border-color);
+    padding: 1rem;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.9rem;
+}
+
+.reasons h3,p{
+    margin: 0;
+}
+
+.reasons p{
+    font-size: 0.85rem;
+    color: var(--text-color);
+}
+
+.reasons span{
+    font-weight: 600;
+    font-size: 1.3rem;
+    color: var(--pri-dark);
+}
+
+.reasons h3{
+    text-transform: capitalize;
+    font-size: 1.2rem;
 }
 
 
@@ -170,6 +252,15 @@
     .know-inner h2{
         font-size: 1.5rem;
     }
+
+    /* why choose us */
+    .reasons {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .reasons > div:nth-child(1){
+        grid-column: 1 / 3;
+    }
 }
 
 @media (min-width: 768px){
@@ -191,6 +282,11 @@
     /* who-we-are */
     .know-inner{
         grid-template-columns: repeat(3, 1fr);
+    }
+
+    /* why choose us */
+    .reasons p{
+        font-size: 0.9rem;
     }
 }
 
@@ -215,5 +311,11 @@
     /* who-we-are */
     .know-inner p{
         font-size: 0.95rem;
+    }
+
+    /* why choose us */
+    .choose-inner{
+        grid-template-columns: 1fr 1fr;
+        gap: 3rem;
     }
 }
