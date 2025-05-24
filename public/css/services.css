@@ -1,0 +1,136 @@
+:root{
+    --pri-color: #bff2e1;
+    --pri-dark: #20c997;
+    --white: #f6f6f6;
+    --black: #1a1a1a;
+    --open-sans-font: "Open Sans", sans-serif;
+    --poppins: "Poppins", sans-serif;
+    --border-color: rgb(211, 211, 211);
+    --border-color2: rgb(138, 138, 138);
+    --text-color: #6c6c6c;
+    --marquee: rgb(242, 242, 242);
+    --footer: #f4f4f4;
+}
+
+.services-hero{
+    min-height: calc(100vh - 7.5rem);
+    background-image: url("../images/man_cleaning_9.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.services-hero::before{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: var(--pri-color);
+    opacity: 0.8;
+}
+
+.services-inner{
+    height: 100%;
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.7rem;
+    padding: 1rem 0;
+}
+
+.services-hero h1{
+    font-size: 1.7rem;
+    text-transform: capitalize;
+    font-weight: 600;
+    color: var(--black);
+    text-align: center;
+}
+
+.services-hero h3{
+    font-size: 1rem;
+    text-transform: capitalize;
+    text-align: center;
+    font-weight: 700;
+}
+
+.services-hero p{
+    font-family: var(--open-sans-font);
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+
+@media (min-width: 360px){
+    .services-hero h1{
+        font-size: 2.3rem;
+    }
+
+    .services-inner{
+        gap: 1rem;
+    }
+}
+
+@media (min-width: 600px){
+    .services-hero h1{
+        font-size: 2.3rem;
+    }
+
+    .services-hero h3{
+        font-size: 1.3rem;
+    }
+
+    /* hero gap */
+    .services-inner{
+        gap: 1.5rem;
+    }
+
+    .services-hero p{
+        line-height: 2;
+    }
+}
+
+@media (min-width: 768px){
+    .services-hero{
+        height: calc(100vh - 5.8rem);
+    }
+
+    .services-hero h1{
+        font-weight: 700;
+        font-size: 3.5rem;
+        width: 70%;
+    }
+
+    .services-hero p{
+        font-size: 1rem;
+        width: 75%;
+    }
+
+}
+
+@media (min-width: 1000px){
+    .services-hero{
+        height: calc(100vh - 6.8rem);
+    }
+
+    .services-hero h1{
+        font-size: 3.4rem;
+    }
+
+    .services-hero p{
+        font-size: 1.2rem;
+        width: 70%;
+    }
+
+    .services-hero button{
+        font-size: 1.2rem;
+    }
+
+    
+}
