@@ -12,7 +12,7 @@
 }
 
 .marquee{
-    margin-top: 4rem;
+    margin-top: 3rem;
     display: flex;
     border-top: 1px solid var(--border-color);
     border-bottom: 1px solid var(--border-color);
@@ -37,13 +37,14 @@
 .marquee img{
     width: 1.3rem;
     opacity: 0.8;
+    /* border: 1px solid rgba(255, 255, 255, 0.248); */
 }
 
 .marquee > div p{
     display: inline-block;
     text-transform: capitalize;
     white-space: nowrap;
-    font-weight: 500;
+    font-weight: 600;
     font-family: var(--open-sans-font);
 }
 
