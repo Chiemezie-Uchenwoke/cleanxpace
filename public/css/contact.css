@@ -14,7 +14,7 @@
 
 .contact-hero{
     min-height: calc(100vh - 7.5rem);
-    background-image: url("../images/man_cleaning_9.jpg");
+    background-image: url("../images/lady_cleaning_3.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -29,7 +29,7 @@
     width: 100%;
     height: 100%;
     background-color: var(--pri-color);
-    opacity: 0.75;
+    opacity: 0.8;
 }
 
 .contact-inner{
@@ -64,6 +64,153 @@
     font-size: 0.9rem;
     font-weight: 600;
     text-align: center;
+}
+
+/* Get in touch */
+.contact-us{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+}
+
+.contact-us form{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.contact-us form h2{
+    text-transform: capitalize;
+} 
+
+.contact-us .horizontal{
+    display: flex;
+    flex-direction: column;
+}
+
+.fullname > div,
+.form_contact_details > div,
+.message{
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+}
+
+.fullname > div,
+.form_contact_details > div{
+    width: 100%;
+}
+
+.fullname,
+.form_contact_details{
+    display: flex;
+    gap: 1rem;
+}
+
+.form-inner-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.contact-us input{
+    height: 2.7rem;
+    border-radius: 10px;
+    outline: none;
+    border: 1px solid var(--border-color);
+    padding: 0.5rem;
+    font-size: 1rem;
+    width: 100%;
+}
+
+.contact-us input:focus{
+    border-color: var(--pri-dark);
+}
+
+.contact-us label{
+    text-transform: capitalize;
+    font-weight: 500;
+}
+
+.contact-us label::after{
+    content: "*";
+    padding-left: 0.5rem;
+    color: red;
+}
+
+.contact-us form button{
+    align-self: flex-start;
+    border: 1px solid var(--border-color);
+    background-color: var(--pri-dark);
+    padding: 0.7rem 3rem;
+    font-size: 1rem;
+    border-radius: 10px;
+    color: var(--white);
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.contact-us form button:hover{
+    filter: brightness(0.95);
+}
+
+.contact-us textarea{
+    border-radius: 10px;
+    outline: none;
+    border: 1px solid var(--border-color);
+    padding: 0.5rem;
+    font-size: 1rem;
+}
+
+.contact-us textarea:focus{
+    border-color: var(--pri-dark);
+}
+
+
+/* company details */
+.contact-us > div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 2rem;
+    padding: 2.5rem 2rem;
+    background-color: var(--pri-dark);
+    color: var(--white);
+    border-radius: 10px;
+}
+
+.contact-us > div h3{
+    text-transform: capitalize;
+    font-size: 1.3rem;
+}
+
+.contact-us > div span.title{
+    text-transform: capitalize;
+    font-weight: 600;
+}
+
+.company-contact p,
+.open-time p{
+    display: flex;
+    gap: 0.8rem;
+}
+
+.connect{
+    display: flex;
+    gap: 0.5rem;
+}
+
+.contact-us > div button{
+    /* align-self: flex-start; */
+    border: 1px solid var(--border-color);
+    background-color: var(--pri-color);
+    padding: 0.5rem 1rem;
+    font-size: 1.3rem;
+    border-radius: 10px;
+    color: var(--black);
+    font-weight: 600;
+    text-transform: capitalize;
+    flex-grow: 1;
 }
 
 
@@ -111,6 +258,27 @@
         font-size: 1rem;
         width: 75%;
     }
+
+    /* contact us */
+    .contact-us{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .contact-us .horizontal{
+        flex-direction: row;
+    }
+
+    .fullname > div,
+    .form_contact_details > div{
+        width: 50%;
+    }
+
+    /* contact details */
+    .contact-us > div h3{
+        text-transform: capitalize;
+        font-size: 1.5rem;
+    }
+
 }
 
 @media (min-width: 1000px){
@@ -130,4 +298,14 @@
     .contact-hero button{
         font-size: 1.2rem;
     }
+
+    /* contact us */
+    .contact-us{
+        grid-template-columns: 1.2fr 0.8fr;
+    }
+
+    .contact-us button{
+        font-size: 1.1rem;
+    }
+
 }
