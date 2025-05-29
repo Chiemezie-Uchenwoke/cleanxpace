@@ -12,7 +12,174 @@
     --footer: #f4f4f4;
 }
 
+.booking-hero{
+    background-image: linear-gradient(to right, var(--pri-dark) 5%, var(--pri-color) 95%);
+    height: calc(70vh - 3.5rem);
+}
 
+.booking-inner{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.booking-hero h1{
+    text-transform: capitalize;
+}
+
+.booking-hero p{
+    width: 70%;
+    max-width: 32rem;
+    text-align: center;
+    font-weight: 600;
+}
+
+/* form */
+.booking-form form{
+    width: 100%;
+    max-width: 60rem;
+    margin-inline: auto;
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    padding: 2.5rem 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.horizontal{
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-info > div,
+.service_address > div,
+.cleaning_options > div,
+.timing > div,
+.street_address,
+.square_footage,
+.additional_notes{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.booking-form label{
+    text-transform: capitalize;
+}
+
+.contact-info label,
+.street_address label,
+.service_address label,
+.cleaning_choice > p,
+.freq label,
+.timing label,
+.square_footage label,
+.additional_notes label{
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.contact-info,
+.service_address,
+.cleaning_options,
+.timing{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.cleaning_choice,
+.freq{
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+.cleaning_choice label{
+    font-size: 0.8rem;
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.cleaning_choice p{
+    margin: 0;
+}
+
+.cleaning_choice > div{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.contact-info > div,
+.service_address > div{
+    width: 100%;
+}
+
+.contact-info input,
+.service_address input{
+    border: 1px solid var(--border-color);
+    outline: none;
+    height: 3rem;
+    border-radius: 10px;
+    padding: 0.5rem 1rem;
+}
+
+.booking-form label{
+    font-family: var(--poppins);
+}
+
+.booking-form input,
+.booking-form textarea,
+.booking-form select{
+    font-family: var(--open-sans-font);
+}
+
+.freq select,
+.date input,
+.time select,
+.size select{
+    border: 1px solid var(--border-color);
+    outline: none;
+    height: 3rem;
+    border-radius: 10px;
+    padding: 0.5rem;
+}
+
+.street_address textarea,
+.square_footage textarea,
+.additional_notes textarea{
+    border: 1px solid var(--border-color);
+    outline: none;
+    height: 7rem;
+    border-radius: 10px;
+    padding: 0.5rem 1rem;
+}
+
+.booking-form input[type="checkbox"]{
+    accent-color: var(--pri-dark);
+    width: 1rem;
+    height: 0.9rem;
+}
+
+.booking-form button{
+    border: 1px solid var(--border-color);
+    background-color: var(--pri-dark);
+    padding: 0.8rem;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--white);
+    border-radius: 10px;
+    transition: filter 0.3s ease-in-out;
+}
+
+.booking-form button:hover{
+    filter: brightness(0.92);
+}
 
 
 @media (min-width: 360px){
@@ -20,10 +187,55 @@
 }
 
 @media (min-width: 768px){
-    
+    .booking-form form{
+        padding: 2.5rem 2rem;
+    }
+
+    .horizontal{
+        flex-direction: row;
+    }
+
+    .contact-info,
+    .service_address,
+    .cleaning_options,
+    .timing{
+        flex-direction: row;
+    }
+
+    .cleaning_choice{
+        width: 70%;
+    }
+
+    .freq{
+        width: 30%;
+    }
+
+    .date{
+        width: 30%;
+    }
+
+    .time{
+        width: 30%;
+    }
+
+    .size{
+        width: 40%;
+    }
+
+    .contact-info > div,
+    .service_address > div{
+        width: calc(100% / 3);
+    }
+
 
 }
 
 @media (min-width: 1000px){
-    
+    .booking-hero{
+        height: calc(55vh - 4.5rem);
+    }
+
+    .booking-form button{
+        font-size: 1.1rem;
+    }
 }

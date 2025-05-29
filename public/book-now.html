@@ -27,10 +27,7 @@
     <!-- css styles -->
      <link rel="stylesheet" href="./css/index-styles/top-bar.css">
      <link rel="stylesheet" href="./css/index-styles/header.css">
-     <link rel="stylesheet" href="./css/services.css">
-     <link rel="stylesheet" href="./css/index-styles/marquee.css">
-     <link rel="stylesheet" href="./css/index-styles/process.css">
-     <link rel="stylesheet" href="./css/index-styles/cta.css">
+     <link rel="stylesheet" href="./css/book-now.css">
      <link rel="stylesheet" href="./css/index-styles/footer.css">
 
     <!-- Open sans font -->
@@ -108,6 +105,132 @@
                 Fill out the form below to schedule your cleaning service. We'll get back to you promptly with confirmation and additional details.
             </p>
         </div>
+    </section>
+
+    <section class="container top-margin booking-form">
+        <form>
+            <div class="contact-info horizontal">
+                <div class="firstname">
+                    <label for="first_name">first name</label>
+                    <input type="text" placeholder="First Name" id="first_name" required>
+                </div>
+
+                <div class="lastname">
+                    <label for="last_name">last name</label>
+                    <input type="text" placeholder="Last Name" id="last_name" required>
+                </div>
+
+                <div class="email">
+                    <label for="email">email</label>
+                    <input type="email" placeholder="example@gmail.com" id="email" required>
+                </div>
+            </div>
+
+            <div class="street_address">
+                <label for="street_address">street address</label>
+                <textarea name="street_address" id="street_address" placeholder="Enter Address" required></textarea>
+            </div>
+
+            <div class="service_address horizontal">
+                <div class="city">
+                    <label for="city">city</label>
+                    <input type="text" placeholder="City" id="city" required>
+                </div>
+
+                <div class="province">
+                    <label for="province">province</label>
+                    <input type="text" placeholder="Example: ON" id="province" required>
+                </div>
+
+                <div class="postal-code">
+                    <label for="postal_code">postal code</label>
+                    <input type="text" placeholder="Enter Postal Code" id="postal_code" required>
+                </div>
+            </div>
+
+            <div class="cleaning_options horizontal">
+                <div class="cleaning_choice">
+                    <p>Cleaning Type (select one or more)</p>
+
+                    <div>
+                        <label>
+                            <input type="checkbox" name="cleaning_type" value="residential">
+                            Residential Cleaning
+                        </label>
+
+                        <label>
+                            <input type="checkbox" name="cleaning_type" value="commercial">
+                            Commercial Cleaning
+                        </label>
+
+                        <label>
+                            <input type="checkbox" name="cleaning_type" value="move_in_out">
+                            Move In / Move Out
+                        </label>
+
+                        <label>
+                            <input type="checkbox" name="cleaning_type" value="hospitality">
+                            Hospitality & Event
+                        </label>
+
+                        <label>
+                            <input type="checkbox" name="cleaning_type" value="window">
+                            Window Cleaning
+                        </label>
+                    </div>
+                </div>
+
+                <div class="freq">
+                    <label for="freq">frequency of service</label>
+                    <select name="freq" id="freq">
+                        <option value="choose_one">choose one</option>
+                        <option value="weekly">weekly</option>
+                        <option value="bi_weekly">bi-Weekly</option>
+                        <option value="monthly">monthly</option>
+                    </select>   
+                </div>
+            </div>
+
+            <div class="timing horizontal">
+                <div class="date">
+                    <label for="cleaning_date">cleaning date</label>
+                    <input type="date" name="cleaning_date" id="cleaning_date" required>
+                </div>
+
+                <div class="time">
+                    <label for="time">time slot</label>
+                    <select name="time_slot" id="time">
+                        <option value="choose">choose</option>
+                        <option value="morning">Morning (8:00 AM - 12:00 PM)</option>
+                        <option value="afternoon">Afternoon (12:00 PM - 4:00 PM)</option>
+                        <option value="evening">Evening (4:00 PM - 7:00 PM)</option>
+                    </select>
+                </div>
+
+                <div class="size">
+                    <label for="space_size">size of the space</label>
+                    <select name="space_size" id="space_size">
+                        <option value="select">select</option>
+                        <option value="1">1 Bedroom / 1 Bathroom</option>
+                        <option value="2">2-3 Bedrooms / 1-2 Bathrooms</option>
+                        <option value="3">4+ Bedrooms / 3+ Bathrooms</option>
+                        <option value="4">Office Space (please specify square footage below)</option>
+                    </select>
+                </div>
+            </div>
+            <div class="square_footage">
+                <label for="square_footage">specify square footage</label>
+                <textarea name="square_footage" id="square_footage" placeholder="Enter value"></textarea>
+            </div>
+
+            <div class="additional_notes">
+                <label for="additional_notes">additional notes</label>
+                <textarea name="additional_notes" id="additional_notes" placeholder="Tell us about pets, special instructions, or extra services needed — e.g., inside fridge/oven, windows, etc"></textarea>
+            </div>
+
+            <button type="submit">Submit Booking Request</button>
+
+        </form>
     </section>
 
     <!-- scroll to top -->
