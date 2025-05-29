@@ -41,6 +41,11 @@ body{
     margin-top: 5rem;
 }
 
+/* bold text */
+.bold{
+    font-weight: 700;
+}
+
 /* active class */
 header.desktop a.active{
     color: var(--pri-dark);
