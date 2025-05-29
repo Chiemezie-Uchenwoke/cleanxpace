@@ -54,7 +54,7 @@
     font-weight: 600;
 }
 
-.hero button{
+.hero a{
     align-self: flex-start;
     border: 1px solid var(--border-color2);
     background-color: var(--pri-dark);
@@ -123,7 +123,7 @@
         width: 70%;
     }
 
-    .hero button{
+    .hero a{
         font-size: 1.2rem;
     }
 }
