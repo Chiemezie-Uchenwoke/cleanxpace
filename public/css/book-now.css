@@ -122,7 +122,7 @@
 
 .contact-info input,
 .service_address input{
-    border: 1px solid var(--border-color);
+    border: 1.2px solid var(--border-color);
     outline: none;
     height: 3rem;
     border-radius: 10px;
@@ -143,7 +143,7 @@
 .date input,
 .time select,
 .size select{
-    border: 1px solid var(--border-color);
+    border: 1.2px solid var(--border-color);
     outline: none;
     height: 3rem;
     border-radius: 10px;
@@ -153,7 +153,7 @@
 .street_address textarea,
 .square_footage textarea,
 .additional_notes textarea{
-    border: 1px solid var(--border-color);
+    border: 1.2px solid var(--border-color);
     outline: none;
     height: 7rem;
     border-radius: 10px;
@@ -179,6 +179,17 @@
 
 .booking-form button:hover{
     filter: brightness(0.92);
+}
+
+.contact-info input:focus,
+.street_address textarea:focus,
+.service_address input:focus,
+.freq select:focus,
+.timing input:focus,
+.timing section:focus,
+.square_footage textarea:focus,
+.additional_notes textarea:focus{
+    border-color: var(--pri-dark);
 }
 
 
