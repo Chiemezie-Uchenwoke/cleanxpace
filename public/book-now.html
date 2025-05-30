@@ -109,6 +109,7 @@
 
     <section class="container top-margin booking-form">
         <form>
+            <p>All fields marked <span class="req"> * </span> are required.</p>
             <div class="contact-info horizontal">
                 <div class="firstname">
                     <label for="first_name">first name</label>
@@ -182,7 +183,7 @@
 
                 <div class="freq">
                     <label for="freq">frequency of service</label>
-                    <select name="freq" id="freq">
+                    <select name="freq" id="freq" required>
                         <option value="choose_one">choose one</option>
                         <option value="weekly">weekly</option>
                         <option value="bi_weekly">bi-Weekly</option>
@@ -199,7 +200,7 @@
 
                 <div class="time">
                     <label for="time">time slot</label>
-                    <select name="time_slot" id="time">
+                    <select name="time_slot" id="time" required>
                         <option value="choose">choose</option>
                         <option value="morning">Morning (8:00 AM - 12:00 PM)</option>
                         <option value="afternoon">Afternoon (12:00 PM - 4:00 PM)</option>
@@ -209,7 +210,7 @@
 
                 <div class="size">
                     <label for="space_size">size of the space</label>
-                    <select name="space_size" id="space_size">
+                    <select name="space_size" id="space_size" required>
                         <option value="select">select</option>
                         <option value="1">1 Bedroom / 1 Bathroom</option>
                         <option value="2">2-3 Bedrooms / 1-2 Bathrooms</option>

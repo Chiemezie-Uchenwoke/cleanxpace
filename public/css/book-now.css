@@ -37,6 +37,14 @@
 }
 
 /* form */
+.req{
+    color: red;
+}
+
+.booking-form form > p{
+    word-spacing: 0.15rem;
+}
+
 .booking-form form{
     width: 100%;
     max-width: 60rem;
@@ -191,6 +199,18 @@
 .additional_notes textarea:focus{
     border-color: var(--pri-dark);
 }
+
+.contact-info label::after,
+.street_address label::after,
+.service_address label::after,
+.cleaning_choice > p::after,
+.freq label::after,
+.timing label::after{
+    content: "*";
+    padding-left: 0.4rem;
+    color: red;
+}
+
 
 
 @media (min-width: 360px){
