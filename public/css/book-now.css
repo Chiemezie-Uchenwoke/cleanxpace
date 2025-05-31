@@ -250,7 +250,7 @@
     }
 
     .timing > div:nth-child(3){
-        width: calc(100% - 60%);
+        width: calc(40% - 4rem);
     }
 
     .contact-info > div,
