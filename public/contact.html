@@ -46,6 +46,17 @@
     <!-- fontawesome cdn -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+    (function(){
+        emailjs.init({
+            publicKey: "uvAl1RUzEcKDa5kee",
+        });
+    })();
+    </script>
+
 </head>
 
 <body>
@@ -112,31 +123,31 @@
 
     <!-- get in touch -->
     <section class="container top-margin contact-us">
-        <form>
+        <form id="contact-form">
             <h2>get in touch</h2>
 
             <div class="form-inner-wrapper">
                 <div class="fullname horizontal">
                     <div class="firstname">
                         <label for="first_name">first name</label>
-                        <input type="text" placeholder="First Name" id="first_name" required>
+                        <input type="text" name="first_name" placeholder="First Name" id="first_name" required>
                     </div>
 
                     <div class="lastname">
-                        <label for="last_name">first name</label>
-                        <input type="text" placeholder="Last Name" id="last_name" required>
+                        <label for="last_name">last name</label>
+                        <input type="text" name="last_name" placeholder="Last Name" id="last_name" required>
                     </div>
                 </div>
 
                 <div class="form_contact_details horizontal">
                     <div class="email">
                         <label for="email">email</label>
-                        <input type="email" placeholder="example@gmail.com" id="email" required>
+                        <input type="email" name="email" placeholder="example@gmail.com" id="email" required>
                     </div>
 
                     <div class="phone">
                         <label for="phone_number">phone</label>
-                        <input type="tel" placeholder="Enter phone number" id="phone_number" required>
+                        <input type="tel" name="phone_number" placeholder="Enter phone number" id="phone_number" required>
                     </div>
                 </div>
 
@@ -146,7 +157,7 @@
                 </div> 
             </div>
 
-            <button type="submit" id="form-submit">submit</button>
+            <button type="submit" id="contact-form-btn">submit</button>
         </form>
 
         <div>
@@ -245,6 +256,7 @@
 
 
     <script src="./js/nav.js"></script>
+    <script src="./js/contact.js"></script>
 </body>
 
 </html>
