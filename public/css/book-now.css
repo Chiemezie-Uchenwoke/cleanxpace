@@ -211,6 +211,9 @@
     color: red;
 }
 
+.timing > div {
+    width: 100%;
+}
 
 
 @media (min-width: 360px){
@@ -241,16 +244,13 @@
         width: 30%;
     }
 
-    .date{
+    .timing > div:nth-child(1),
+    .timing > div:nth-child(2){
         width: 30%;
     }
 
-    .time{
-        width: 30%;
-    }
-
-    .size{
-        width: 40%;
+    .timing > div:nth-child(3){
+        width: calc(100% - 60%);
     }
 
     .contact-info > div,
