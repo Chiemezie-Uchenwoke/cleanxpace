@@ -1,0 +1,53 @@
+:root{
+    --pri-color: #bff2e1;
+    --pri-dark: #20c997;
+    --white: #f6f6f6;
+    --black: #1a1a1a;
+    --open-sans-font: "Open Sans", sans-serif;
+    --poppins: "Poppins", sans-serif;
+    --border-color: rgb(211, 211, 211);
+    --border-color2: rgb(138, 138, 138);
+    --text-color: #6c6c6c;
+    --marquee: rgb(242, 242, 242);
+    --footer: #f4f4f4;
+}
+
+.booking-req{
+    width: 100%;
+    max-width: 40rem;
+    margin-inline: auto;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.booking-req h1{
+    font-size: 1.3rem;
+    text-transform: capitalize;
+}
+
+.booking-req a{
+    background-color: var(--pri-dark);
+    padding: 0.7rem 2rem;
+    color: var(--white);
+    border-radius: 10px;
+    margin-top: 1.5rem;
+    text-transform: capitalize;
+    transition: filter 0.3s ease-in-out;
+}
+
+.booking-req a:hover{
+    filter: brightness(0.92);
+}
+
+.booking-req p,h1,a{
+    text-align: center;
+    margin: 0;
+}
+
+.booking-req p{
+    font-size: 0.85rem;
+}
