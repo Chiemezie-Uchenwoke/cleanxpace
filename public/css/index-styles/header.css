@@ -23,6 +23,17 @@ header.desktop{
     z-index: 1000;
 }
 
+header.desktop figure{
+    width: 4.3rem;
+    height: 4rem;
+}
+
+header.desktop img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 header.desktop > div{
     display: flex;
     align-items: center;
@@ -34,6 +45,8 @@ header.desktop > div{
     text-transform: capitalize;
     font-size: 1.25rem;
     width: 30%;
+    display: flex;
+    align-items: center;
 }
 
 header.desktop nav{
@@ -88,10 +101,20 @@ header.mobile > div{
     align-items: center;
 }
 
+header.mobile figure{
+    width: 3.5rem;
+    height: 2.7rem;
+}
+
+header.mobile img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 .mobile_inner > div:nth-child(1){
-    font-size: 0.85rem;
-    font-weight: 600;
-    text-transform: capitalize;
+    display: flex;
+    align-items: center;
 }
 
 header.mobile nav{
