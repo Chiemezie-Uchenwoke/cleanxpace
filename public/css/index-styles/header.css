@@ -24,8 +24,8 @@ header.desktop{
 }
 
 header.desktop figure{
-    width: 4.3rem;
-    height: 4rem;
+    width: 3.7rem;
+    height: 3rem;
 }
 
 header.desktop img{
@@ -102,7 +102,7 @@ header.mobile > div{
 }
 
 header.mobile figure{
-    width: 3.5rem;
+    width: 3rem;
     height: 2.7rem;
 }
 
