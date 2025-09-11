@@ -23,7 +23,7 @@ header.desktop{
     z-index: 1000;
 }
 
-header.desktop figure{
+header.desktop .logo{
     width: 3.7rem;
     height: 3rem;
 }
@@ -32,6 +32,15 @@ header.desktop img{
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+.logo-desc-lg{
+    display: flex;
+    flex-direction: column;
+}
+
+.logo-desc-lg span{
+    font-size: 0.8rem;
 }
 
 header.desktop > div{
