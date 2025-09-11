@@ -110,9 +110,18 @@ header.mobile > div{
     align-items: center;
 }
 
-header.mobile figure{
-    width: 3rem;
-    height: 2.7rem;
+header.mobile .logo-sm{
+    width: 2.8rem;
+    height: auto;
+}
+
+.logo-desc-sm{
+    display: flex;
+    flex-direction: column;
+}
+
+.logo-desc-sm span{
+    font-size: 0.65rem;
 }
 
 header.mobile img{
