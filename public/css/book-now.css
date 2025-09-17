@@ -68,6 +68,7 @@
 .timing > div,
 .street_address,
 .square_footage,
+.cleaning_freq,
 .additional_notes{
     display: flex;
     flex-direction: column;
@@ -85,6 +86,7 @@
 .freq label,
 .timing label,
 .square_footage label,
+.cleaning_freq label,
 .additional_notes label{
     font-size: 0.9rem;
     font-weight: 600;
@@ -160,6 +162,7 @@
 
 .street_address textarea,
 .square_footage textarea,
+.cleaning_freq textarea,
 .additional_notes textarea{
     border: 1.2px solid var(--border-color);
     outline: none;
@@ -196,6 +199,7 @@
 .timing input:focus,
 .timing section:focus,
 .square_footage textarea:focus,
+.cleaning_freq textarea:focus,
 .additional_notes textarea:focus{
     border-color: var(--pri-dark);
 }

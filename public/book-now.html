@@ -208,6 +208,11 @@
                             <input type="checkbox" name="cleaning_type" value="window">
                             Window Cleaning
                         </label>
+
+                        <label>
+                            <input type="checkbox" name="cleaning_type" value="other">
+                            Other
+                        </label>
                     </div>
                 </div>
 
@@ -218,8 +223,16 @@
                         <option value="weekly">weekly</option>
                         <option value="bi-weekly">bi-Weekly</option>
                         <option value="monthly">monthly</option>
+                        <option value="other">other</option>
                     </select>   
                 </div>
+            </div>
+
+            <div class="cleaning_freq">
+                <label for="otherDetails">
+                    Please describe your preferred cleaning type and/or frequency of service if you selected “Other”
+                </label>
+                <textarea name="otherDetails" id="otherDetails" placeholder="e.g., Deep sanitization every 2 weeks"></textarea>
             </div>
 
             <div class="timing horizontal">
@@ -235,6 +248,7 @@
                         <option value="Morning (8:00 AM - 12:00 PM)">Morning (8:00 AM - 12:00 PM)</option>
                         <option value="Afternoon (12:00 PM - 4:00 PM)">Afternoon (12:00 PM - 4:00 PM)</option>
                         <option value="Evening (4:00 PM - 7:00 PM)">Evening (4:00 PM - 7:00 PM)</option>
+                        <option value="Other">Other</option>
                     </select>
                 </div>
 
