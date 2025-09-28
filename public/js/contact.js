@@ -15,8 +15,8 @@ contactForm.addEventListener("submit", (e) => {
         message: document.getElementById("message").value,
     };
 
-    const serviceID = "service_ubq3uy4";
-    const templateID = "template_ombzs2t";
+    const serviceID = "";
+    const templateID = "";
 
     emailjs.send(serviceID, templateID, params)
         .then(() => {

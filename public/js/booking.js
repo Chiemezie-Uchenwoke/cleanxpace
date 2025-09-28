@@ -30,8 +30,8 @@ bookingForm.addEventListener("submit", (e) => {
         additional_notes: document.getElementById("additional_notes").value,
     };
 
-    const serviceID = "service_ubq3uy4";
-    const templateID = "template_iu3a5ph";
+    const serviceID = "";
+    const templateID = "";
 
     emailjs.send(serviceID, templateID, params)
         .then(() => {
