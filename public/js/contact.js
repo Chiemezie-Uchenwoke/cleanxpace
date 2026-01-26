@@ -22,9 +22,9 @@ contactForm.addEventListener("submit", async (e) => {
             contactForm.reset();
 
             // Redirect to success page
-            window.location.href = '/thank-you.html'; // Change this to your success page URL
+            window.location.href = '/thank-you.html'; 
+
         } else {
-            // Handle error
             alert('Something went wrong. Please try again.');
             submitBtn.disabled = false;
             submitBtn.textContent = 'submit';

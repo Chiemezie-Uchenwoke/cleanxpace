@@ -1,49 +1,38 @@
-const bookingFormBtn = document.getElementById("booking-form-btn");
+const submitBtn = document.getElementById("booking-form-btn");
 const bookingForm = document.getElementById("booking-form");
 
-bookingForm.addEventListener("submit", (e) => {
+bookingForm.addEventListener("submit", async (e) => {
     e.preventDefault();
 
-    bookingFormBtn.disabled = true;
-    bookingFormBtn.innerText = "Sending...";
+    submitBtn.disabled = true;
+    submitBtn.innerText = "Sending...";
 
-    // Collect all selected cleaning types
-    const selectedCleaningTypes = Array.from(document.querySelectorAll('input[name="cleaning_type"]:checked'))
-        .map(checkbox => checkbox.value)
-        .join(', ');
+    // Get form data
+    const formData = new FormData(bookingForm);
 
-
-    const params = {
-        first_name: document.getElementById("first_name").value,
-        last_name: document.getElementById("last_name").value,
-        email: document.getElementById("email").value,
-        street_address: document.getElementById("street_address").value,
-        city: document.getElementById("city").value,
-        province: document.getElementById("province").value,
-        postal_code: document.getElementById("postal_code").value,
-        cleaning_type: selectedCleaningTypes,
-        freq: document.getElementById("freq").value,
-        cleaning_date: document.getElementById("cleaning_date").value,
-        time: document.getElementById("time").value,
-        space_size: document.getElementById("space_size").value,
-        square_footage: document.getElementById("square_footage").value,
-        additional_notes: document.getElementById("additional_notes").value,
-    };
-
-    const serviceID = "";
-    const templateID = "";
-
-    emailjs.send(serviceID, templateID, params)
-        .then(() => {
-            bookingForm.reset();
-            location.href = "thank-you-booking-form.html";
-        })
-        .catch((err) => {
-            alert("Something went wrong. Please try again.");
-            console.error(err);
-        })
-        .finally(() => {
-            bookingFormBtn.disabled = false;
-            bookingFormBtn.innerText = "Send Message";
+    try {
+        const response = await fetch("https://api.web3forms.com/submit", {
+            method: "POST",
+            body: formData
         });
+
+        const data = await response.json();
+
+        if (data.success) {
+            bookingForm.reset();
+
+            // Redirect to success page
+            window.location.href = '/thank-you-booking-form.html'; 
+        } else {
+            alert('Something went wrong. Please try again.');
+            submitBtn.disabled = false;
+            submitBtn.textContent = 'submit';
+        }
+
+    } catch (err) {
+        console.error("Error: ", err);
+        submitBtn.disabled = false;
+        submitBtn.textContent = 'submit';
+    }
+    
 });
