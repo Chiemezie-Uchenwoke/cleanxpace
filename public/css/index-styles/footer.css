@@ -14,11 +14,11 @@
 footer{     
     background-color: var(--footer);
     border-top: 1px solid var(--border-color);
-    padding: 2rem 0 0 0;
+    /* padding: 2rem 0 0 0; */
     color: var(--black);
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    /* gap: 2rem; */
 }
 
 footer h2{
@@ -40,7 +40,7 @@ footer li{
     grid-template-columns: 1fr;
     gap: 2rem;
     align-items: start;
-    padding: 2rem 0;
+    padding: 3rem 0;
 }
 
 .footer-content > div{

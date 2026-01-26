@@ -54,6 +54,7 @@
     border: 1px solid var(--border-color);
     border-radius: 10px;
     overflow: hidden;
+    background-color: white;
 }
 
 /* .services-content figure{

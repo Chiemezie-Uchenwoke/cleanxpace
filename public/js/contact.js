@@ -1,34 +1,43 @@
-const contactFormBtn = document.getElementById("contact-form-btn");
+const submitBtn = document.getElementById("contact-form-btn");
 const contactForm = document.getElementById("contact-form");
 
-contactForm.addEventListener("submit", (e) => {
+contactForm.addEventListener("submit", async (e) => {
     e.preventDefault();
 
-    contactFormBtn.disabled = true;
-    contactFormBtn.innerText = "Sending...";
+    submitBtn.disabled = true;
+    submitBtn.innerText = "Sending...";
 
-    const params = {
-        first_name: document.getElementById("first_name").value,
-        last_name: document.getElementById("last_name").value,
-        email: document.getElementById("email").value,
-        phone_number: document.getElementById("phone_number").value,
-        message: document.getElementById("message").value,
-    };
+    // Get form data
+    const formData = new FormData(contactForm);
 
-    const serviceID = "";
-    const templateID = "";
-
-    emailjs.send(serviceID, templateID, params)
-        .then(() => {
-            contactForm.reset();
-            location.href = "thank-you.html";
-        })
-        .catch((err) => {
-            alert("Something went wrong. Please try again.");
-            console.error(err);
-        })
-        .finally(() => {
-            contactFormBtn.disabled = false;
-            contactFormBtn.innerText = "Send Message";
+    try {
+        const response = await fetch("https://api.web3forms.com/submit", {
+            method: "POST",
+            headers: {
+                'Content-Type': 'application/json',
+                'Accept': 'application/json'
+            },
+            body: formData
         });
+
+        const data = await response.json();
+
+        if (data.success) {
+            contactForm.reset();
+
+            // Redirect to success page
+            window.location.href = '/thank-you.html'; // Change this to your success page URL
+        } else {
+            // Handle error
+            alert('Something went wrong. Please try again.');
+            submitBtn.disabled = false;
+            submitBtn.textContent = 'submit';
+        }
+
+    } catch (err) {
+        console.error("Error: ", err);
+        submitBtn.disabled = false;
+        submitBtn.textContent = 'submit';
+    }
+    
 });

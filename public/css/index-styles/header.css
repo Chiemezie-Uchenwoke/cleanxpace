@@ -13,7 +13,7 @@
 /* desktop header */
 header.desktop{
     height: 4.5rem;
-    background-color: var(--white);
+    background-color: white;
     border-bottom: 1px solid var(--border-color);
     display: none;
     align-items: center;
@@ -94,7 +94,7 @@ header.desktop a:hover{
 /* mobile header */
 header.mobile{
     height: 3.5rem;
-    background-color: var(--white);
+    background-color: white;
     border-bottom: 1px solid var(--border-color);
     display: flex;
     align-items: center;
@@ -163,7 +163,7 @@ header.mobile nav a{
 
 button.open-mobile{
     border: 1px solid var(--border-color);
-    background-color: var(--white);
+    background-color: white;
     text-transform: capitalize;
     font-weight: 500;
     padding: 0.3rem 0.5rem;

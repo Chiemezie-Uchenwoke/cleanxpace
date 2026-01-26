@@ -81,7 +81,7 @@
 }
 
 .know-inner > div{
-    background-color: var(--white);
+    background-color: white;
     padding: 2rem 1rem;
     border: 1px solid var(--border-color);
     border-radius: 10px;
@@ -177,6 +177,7 @@
 
 .reasons > div{
     border: 1px solid var(--border-color);
+    background-color: white;
     padding: 1rem;
     border-radius: 10px;
     display: flex;
