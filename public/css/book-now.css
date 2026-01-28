@@ -205,12 +205,12 @@
     border-color: var(--pri-dark);
 }
 
+/* .freq label::after, */
+.date label::after,
 .contact-info label::after,
 .street_address label::after,
 .service_address label::after,
-.cleaning_choice > p::after,
-.freq label::after,
-.timing label::after{
+.cleaning_choice > p::after{
     content: "*";
     padding-left: 0.4rem;
     color: red;
